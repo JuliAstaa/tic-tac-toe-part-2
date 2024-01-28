@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <title>Tic tac toe</title>
+  </head>
+  <body>
+    <div
+      class="game w-full h-full min-h-screen grid place-content-center relative"
+    >
+      <div
+        class="lg:fixed top-0 left-0 w-full h-full flex justify-center lg:grid lg:place-content-center"
+      >
+        <h1 class="text-black font-semibold text-6xl lg:text-[300px]">
+          TIC TAC TOE
+        </h1>
+      </div>
+      <div class="relative">
+        <div class="w-full flex justify-center mt-4 lg:mt-0">
+          <p id="gameInfo" class="text-black font-semibold text-xl">X's turn</p>
+        </div>
+        <div
+          class="board lg:w-[610px] w-[305px] h-[305px] lg:h-[610px] grid grid-cols-3 place-content-center gap-1"
+        >
+          <button id="0" class="square squares"></button>
+          <button id="1" class="square squares"></button>
+          <button id="2" class="square squares"></button>
+          <button id="3" class="square squares"></button>
+          <button id="4" class="square squares"></button>
+          <button id="5" class="square squares"></button>
+          <button id="6" class="square squares"></button>
+          <button id="7" class="square squares"></button>
+          <button id="8" class="square squares"></button>
+        </div>
+        <div class="w-full flex justify-center mt-4">
+          <button
+            id="restart"
+            class="text-slate-800 border-2 py-1 px-4 text-xl font-semibold rounded-md hover:bg-slate-200"
+          >
+            Restart
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
